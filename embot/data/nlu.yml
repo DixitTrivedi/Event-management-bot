@@ -1,0 +1,123 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_event_details
+  examples: |
+    - show me the event details
+    - event details pleaase
+    - event details
+    - please show me the event details
+    - do you have a schedule for the event?
+    - where is the event organised?
+    - when is the event organised?
+
+- intent: ask_hotel_details
+  examples: |
+    - which hotels are nearby?
+    - nearby stay options?
+    - do you have some info regarding hotels?
+    - any stays nearby?
+    - any hotels nearby?
+
+- intent: ask_tickets_details
+  examples: |
+    - show me the tickets details
+    - tickets details pleaase
+    - tickets details
+    - please show me the tickets details
+    - tickets price
+    - how much does a ticket priced?
+    - how much does a ticket cost?
+    - whats the availiblity of the tickets?
+    - how many seat are empty?
+    - seats empty?

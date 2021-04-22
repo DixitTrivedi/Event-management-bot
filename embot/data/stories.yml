@@ -1,0 +1,51 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: user wants to check event details
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_event_details
+  - action: show_event_details
+  - action: utter_goodbye
+
+- story: user wants to check hotel details
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_hotel_details
+  - action: show_hotel_details
+  - action: utter_goodbye
+
+- story: user wants to check tickets details
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_tickets_details
+  - action: show_tickets_details
+  - action: utter_goodbye
